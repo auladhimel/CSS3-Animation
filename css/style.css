@@ -1,0 +1,80 @@
+
+.main{
+
+	
+	height: 200px;
+	width: 200px;
+	background-color: #ffd9b3;
+	position: relative;
+	
+}
+
+.color{
+
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	position: relative;
+	animation-name: test;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	
+}
+
+
+.box1{
+
+	width: 200px;
+	height: 200px;
+	background-color: #ff9933;
+	position: absolute;
+	transition: 1s; 
+
+}
+.box2{
+
+	width: 200px;
+	height: 200px;
+	background-color: #b35900;
+	position: absolute;
+	transition: 1s;
+
+
+}
+.box3{
+
+	width:200px;
+	height: 200px;
+	background-color: #663300;
+	position: absolute;
+	transition: 1s;
+
+
+}
+	
+.main:hover .box1{
+	transform: translate(1000px) rotate(360deg);
+
+}
+.main:hover .box2{
+	transform: translate(0,350px) rotate(360deg);
+
+
+}
+.main:hover .box3{
+	transform: translate(1000px,350px) rotate(360deg);
+
+
+}
+
+
+@keyframes test{
+
+0%{background-color: #ffd9b3; left:0px; top:0px;}
+25%{background-color: #ff9933; left:1100px; top:0px;}
+50%{background-color: #b35900; left:1100px; top:450px;}
+75%{background-color: #663300; left:0px; top:450px;}
+100%{background-color: #ffd9b3; left:0px; top:0px;}
+
+
+}
